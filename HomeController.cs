@@ -8,24 +8,25 @@ namespace Portfolio1.Controllers
         // localhost:5000
         // [Route("")]
         [HttpGet("")]
-        public string Index()
+        public ViewResult Index()
         {
-            return "This is my index";
+            // ViewResult myView = View();
+            return View();
         }
 
         // localhost:5000/projects
-        [Route("projects")]
+        [Route("project")]
         [HttpGet]
-        public string Projects()
+        public ViewResult Project()
         {
-            return "These are my projects";
+            return View();
         }
         // localhost:5000/contact
             [Route("contact")]
             [HttpGet]
-            public string Contact()
+            public ViewResult Contact()
             {
-                return "This is my Contact";
+                return View();
             }
         // localhost:5000/users/???
         // [HttpGet("users/{username}/{location}")]
